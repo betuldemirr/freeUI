@@ -181,7 +181,7 @@ body {
   align-items: center;
 }
 
-.content__navbar--left {
+.content__navbarLeft {
   margin-left: 50px;
   width: 236px;
   height: 61px;
@@ -194,7 +194,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.content__navbar--left div {
+.content__navbarLeft div {
   font-size: 16px;
   font-weight: 600;
   line-height: 20.08px;
@@ -203,20 +203,21 @@ body {
 .content__navbarMenu {
   width: 352px;
   height: 44px;
-  background-color: aquamarine;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .content__navbarMenu ul {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
+  justify-content: flex-start;
 }
 .content__navbarMenu li {
   list-style: none;
   background-color: #fff;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .content__navbarMenu a {
   text-decoration: none;
@@ -225,12 +226,12 @@ body {
   font-weight: 500;
 }
 
-.content__navbar--right {
+.content__navbarRight {
   width: 365px;
   height: 61px;
   display: flex;
 }
-.content__navbar--right ul {
+.content__navbarRight ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -240,7 +241,7 @@ body {
   padding: 0%;
   margin: 0%;
 }
-.content__navbar--right li {
+.content__navbarRight li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,8 +261,8 @@ body {
 .content__wrapper--div {
   width: 425px;
   height: 319px;
-  background-color: #f1f1fd;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .content__wrapper--div-logo {
@@ -279,4 +280,34 @@ body {
 .content__wrapper--div-logo img {
   width: 29px;
   height: 29px;
+}
+
+.content__wrapper--by {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.content__wrapper--by-parts {
+  min-height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.content__wrapper--by-fav {
+  height: 100%;
+}
+
+.g-5 {
+  gap: 5px;
+}
+
+.ml-20 {
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */
