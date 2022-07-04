@@ -20,7 +20,7 @@ body {
 }
 
 /*navbar css*/
-.navbar {
+.navbar__wrapper {
   height: 120px;
   width: 100%;
   display: flex;
@@ -28,7 +28,7 @@ body {
   justify-content: space-between;
 }
 
-.topLeftFrame {
+.navbar__wrapperLeft {
   width: 140px;
   height: 40px;
   display: flex;
@@ -37,7 +37,7 @@ body {
   gap: 5px;
 }
 
-.topMiddleFrame {
+.navbar__wrapperMenu {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 
-.topRightFrame {
+.navbar__wrapperRight {
   width: 195px;
   height: 54px;
   display: flex;
@@ -59,18 +59,17 @@ body {
   height: 100%;
 }
 
-.frameParts {
+.navbar__wrapperMenu-parts {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
   list-style: none;
 }
-
-.menuContent {
+.navbar__wrapperMenu-parts a {
   text-decoration: none;
 }
 
-.login {
+.navbar__wrapperRight-login {
   width: 75px;
   height: 100%;
   justify-content: center;
@@ -79,7 +78,7 @@ body {
   text-decoration: none;
 }
 
-.signUp {
+.navbar__wrapperRight-signUp {
   background-color: #202142;
   color: #fff;
   text-decoration: none;
