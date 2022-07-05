@@ -124,14 +124,9 @@ body {
     }
 }
 
-.header__wrapper--dropdown {
-    width: 165px;
-    height: 54px;
-    background-color: #ff6a95;
-}
 .header__wrapper--search {
     background-color: $white;
-    display: flex;
+    @include center;
     flex-direction: row;
     width: 651px;
     height: 74px;
@@ -151,8 +146,51 @@ body {
         border: none;
         border-radius: 10px;
     }
-    
 }
+.header__wrapper--dropdown {
+    width: 165px;
+    height: 54px;
+    gap: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    @include center;
+    //position: relative;
+    border-right: 1px solid #efefff;
+    display: inline-block;
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: $white;
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20.08px;
+            display: flex;
+            align-self: center;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    a {
+        display: none;
+        text-decoration: none;
+    }
+}
+.header__wrapper--dropdown:hover {
+    a {
+        display: block;
+        background-color: $white;
+        color: $black;
+    }
+    a:hover {
+        background-color: $lightBlue;
+    }
+}
+
 .header__wrapper--search button {
     width: 165px;
     height: 54px;
@@ -194,19 +232,18 @@ body {
         font-weight: 600;
         line-height: 20.08px;
     }
-    
 }
 .content__navbarMenu {
     width: 352px;
     height: 44px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     ul {
         display: flex;
-        justify-content: flex-start;        
+        justify-content: flex-start;
     }
     li {
         list-style: none;
@@ -228,7 +265,7 @@ body {
     height: 61px;
     // background-color: lemonchiffon;
     display: flex;
-    
+
     ul {
         display: flex;
         list-style: none;
@@ -246,10 +283,9 @@ body {
         height: 61px;
         border-radius: 70px;
         border: 1px solid $pink;
-        border-color: rgba(0,0,0,0.1);
+        border-color: rgba(0, 0, 0, 0.1);
     }
     img {
-
     }
 }
 .content__wrapper {
@@ -283,7 +319,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    
 }
 .content__wrapper--by-parts {
     min-height: 100%;
@@ -292,12 +327,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 14px;
-
-
 }
 .content__wrapper--by-fav {
     height: 100%;
-
 }
 .g-5 {
     gap: 5px;
