@@ -132,6 +132,20 @@ body {
     border-radius: 10px;
     border: 1px solid #efefff;
     box-shadow: 0px 16px 35px -15px #02058426;
+    img {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-self: center;
+        opacity: 0.6;
+    }
+    input {
+        display: flex;
+        flex: 1;
+        border: none;
+        border-radius: 10px;
+    }
+    
 }
 .header__wrapper--search button {
     width: 165px;
