@@ -110,18 +110,24 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 90px;
+    label {
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 18px;
+        line-height: 27px;
+        width: 580px;
+        height: 54px;
+        text-align: center;
+    }
 }
-.header__wrapper label {
-    font-size: 22px;
-    line-height: 33px;
-    font-weight: 700;
-}
-.header__wrapper p {
-    font-size: 18px;
-    line-height: 27px;
-    width: 580px;
+
+.header__wrapper--dropdown {
+    width: 165px;
     height: 54px;
-    text-align: center;
+    background-color: #ff6a95;
 }
 .header__wrapper--search {
     background-color: $white;
@@ -158,9 +164,6 @@ body {
 .header__wrapper--area input {
     border-width: 1px solid #efefff;
     border-radius: 10px;
-}
-.header__wrapper--dropdown {
-    display: none;
 }
 
 /*content css*/

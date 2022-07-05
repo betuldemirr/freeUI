@@ -120,19 +120,23 @@ body {
   align-items: center;
   margin-top: 90px;
 }
-
 .header__wrapper label {
   font-size: 22px;
   line-height: 33px;
   font-weight: 700;
 }
-
 .header__wrapper p {
   font-size: 18px;
   line-height: 27px;
   width: 580px;
   height: 54px;
   text-align: center;
+}
+
+.header__wrapper--dropdown {
+  width: 165px;
+  height: 54px;
+  background-color: #ff6a95;
 }
 
 .header__wrapper--search {
@@ -173,10 +177,6 @@ body {
 .header__wrapper--area input {
   border-width: 1px solid #efefff;
   border-radius: 10px;
-}
-
-.header__wrapper--dropdown {
-  display: none;
 }
 
 /*content css*/
