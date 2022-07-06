@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="main.scss">
     <link rel="stylesheet" href="style.css">
+
     <title>Free UI</title>
 </head>
 
@@ -16,9 +21,36 @@
         <!--navbar-start-->
         <div class="navbar__wrapper">
             <div class="navbar__wrapperLeft">
-                <img src="./image/Combined Shape.svg" alt="" class="logo">
-                <label for="" class="companyName">Design Daily</label>
+                <img src="./image/Combined Shape.svg" alt="" class="navbar__wrapperLeft-logo">
+                <img src="./image/DesignDaily.svg" alt="">
             </div>
+
+            <!-- <nav class="navbar navbar-expand-lg navbar-light navbar__wrapperMenu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Free designs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">License</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contributors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> -->
+
 
             <ul class="navbar__wrapperMenu">
                 <li class="navbar__wrapperMenu-parts">
@@ -38,10 +70,33 @@
                 </li>
             </ul>
 
-            <div class="navbar__wrapperRight">
-                <a href="" class="navbar__wrapperRight-login">Log in</a>
-                <a href="" class="navbar__wrapperRight-signUp">Sign Up</a>
+            <div class="navbarr__wrapperToggle">
+                <i class="fa fa-bars"></i>
+                <ul class="navbarr__wrapperMenu">
+                    <li class="navbar__wrapperMenu-parts">
+                        <a href="">Free designs</a>
+                    </li>
+                    <li class="navbarr__wrapperMenu-parts">
+                        <a href="">License</a>
+                    </li>
+                    <li class="navbar__wrapperMenu-parts">
+                        <a href="">Articles</a>
+                    </li>
+                    <li class="navbarr__wrapperMenu-parts">
+                        <a href="">Contributors</a>
+                    </li>
+                    <li class="navbarr__wrapperMenu-parts">
+                        <a href="">About</a>
+                    </li>
+                </ul>
             </div>
+
+            <div class="navbar__wrapperRight">
+                <button href="" class="navbar__wrapperRight-login">Log in</button>
+                <button href="" class="navbar__wrapperRight-signUp">Sign Up</button>
+            </div> 
+
+            
         </div>
         <!--navbar-end-->
 
@@ -55,7 +110,7 @@
 
                 <div class="header__wrapper--search">
                     <div class="header__wrapper--dropdown">
-                        <button >
+                        <button>
                             <label>Free designs</label>
                             <img src="./image/chevronDown.svg" alt="">
                         </button>
@@ -66,7 +121,7 @@
                         </div>
 
                     </div>
-                    
+
                     <img src="./image/chevron-down.svg" alt="search" class="header__wrapper--search-img">
                     <input type="text" placeholder=" Search .." class="header__wrapper--search-input">
                 </div>
@@ -80,48 +135,59 @@
             <div class="content__navbar">
 
                 <div class="content__navbarLeft">
-                    <div class="content__navbarLeft-L">Latest</div>
-                    <div>Popular</div>
+                    <button onclick="clickEvent()" class="left_frame_buttons content__navbarLeft-btn1">Latest</button>
+                    <button onclick="clickEvent()" class="left_frame_buttons content__navbarLeft-btn2">Popular</button>
+                    <div id="button_frame" class="back-button-frame" [style.left]="position"></div>
                 </div>
 
                 <div class="content__navbarMenu">
-                    <ul>
-                        <li class="frameParts">
-                            <a href="" class="menuContent">All</a>
+                    <ul class="finike">
+                        <li class="finike">
+                            <a class="menuContent">All</a>
                         </li>
-                        <li class="frameParts">
-                            <a href="" class="menuContent">Web</a>
+                        <li class="finike">
+                            <a class="menuContent">Web</a>
                         </li>
-                        <li class="frameParts">
-                            <a href="" class="menuContent">Mobile</a>
+                        <li class="finike">
+                            <a class="menuContent">Mobile</a>
                         </li>
-                        <li class="frameParts">
-                            <a href="" class="menuContent">UI Kit</a>
+                        <li class="finike">
+                            <a class="menuContent">UI Kit</a>
                         </li>
-                        <li class="frameParts">
-                            <a href="" class="menuContent">Coded</a>
+                        <li class="finike">
+                            <a class="menuContent">Coded</a>
                         </li>
                     </ul>
                 </div>
 
 
                 <div class="content__navbarRight">
-                    <ul>
-                        <li>
-                            <img src="./image/brand-logos1.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="./image/brand-logos2.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="./image/brand-logos3.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="./image/brand-logos4.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="./image/brand-logos5.svg" alt="">
-                        </li>
+                    <ul class="content__navbarRight-list">
+                        <div>
+                            <li class="content__navbarRight-link">
+                                <img src="./image/brand-logos1.svg" alt="">
+                            </li>
+                        </div>
+                        <div>
+                            <li class="content__navbarRight-link">
+                                <img src="./image/brand-logos2.svg" alt="">
+                            </li>
+                        </div>
+                        <div>
+                            <li class="content__navbarRight-link">
+                                <img src="./image/brand-logos3.svg" alt="">
+                            </li>
+                        </div>
+                        <div>
+                            <li class="content__navbarRight-link">
+                                <img src="./image/brand-logos4.svg" alt="">
+                            </li>
+                        </div>
+                        <div>
+                            <li class="content__navbarRight-link">
+                                <img src="./image/brand-logos5.svg" alt="">
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
