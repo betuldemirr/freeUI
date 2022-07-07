@@ -6,7 +6,7 @@ let position = "24px";
 
 document.getElementById("button_frame").style.left = "24px";
 window.addEventListener("DOMContentLoaded", loadList);
-search.addEventListener("input", filter);
+search.addEventListener("header__wrapper--search-input", filter);
 
 function loadList() {
     let temp = `<ul class="list-items">`;
@@ -43,4 +43,5 @@ function clickEvent() {
         document.getElementById("button_frame").style.left = "24px";
         position = "24px";
     }
+
 }
