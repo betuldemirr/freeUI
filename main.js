@@ -43,5 +43,4 @@ function clickEvent() {
         document.getElementById("button_frame").style.left = "24px";
         position = "24px";
     }
-    console.log("sdkjfgkjsdhf");
 }
